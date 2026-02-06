@@ -41,7 +41,7 @@ Se você precisa de:
 ✔️ Landing Page para seu negócio  
 ✔️ Site institucional  
 ✔️ Layout moderno e personalizado  
-### 👉 **<a href="https://figtoweb.com.br/" target="_blank"><img src="https://img.shields.io/badge/-instagram-8A2BE2?style=for-the-badge&logo=instagram&logoColor=white"></a> 👈 — Nossa página** 
+### 👉 **<a href="https://www.instagram.com/figtoweb/" target="_blank"><img src="https://img.shields.io/badge/-instagram-8A2BE2?style=for-the-badge&logo=instagram&logoColor=white"></a> 👈 — Nossa página** 
 
  
   
