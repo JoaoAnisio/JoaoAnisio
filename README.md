@@ -1,4 +1,4 @@
-## Bem-vindo(a) ao perfil de João Anísio / ESTAMOS EM OBRA 🏗️
+## Bem-vindo(a) ao perfil de João Anísio
 ## 👋 Olá, eu sou João 
 
 Sou desenvolvedor em formação, estudante de ciência da computação e entuisiasta das novas tecnologias.  
