@@ -50,7 +50,7 @@ joao:
     back:  [Python, Java]
     front: [TypeScript, React, HTML, CSS]
     data:  [PostgreSQL, MySQL, Redis]
-    ai:    [n8n, Gemini]
+    ai:    [n8n, Gemini, Claude, RAG]
   focus: "APIs + automação com IA"
   coffee: ☕☕☕
 ```
@@ -72,8 +72,6 @@ joao:
 <p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
 
 ## 🛠️ Stack & ferramentas
-
-<p><code>joaoanisio@github:~$ toolbox --list</code></p>
 
 <div align="center">
 
