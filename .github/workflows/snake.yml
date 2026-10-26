@@ -1,4 +1,4 @@
-name: Gerar cobrinha de contribuições
+name: Gerar visuais do perfil
 
 on:
   schedule:
@@ -15,13 +15,56 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Gerar SVGs
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+      - name: Baixar cards animados sem marca d'água
+        env:
+          BASE: https://www.gitskins.com/api/section
+          COMMON: username=joaoanisio&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4
+        run: |
+          mkdir -p dist
+          # save <arquivo> <url>
+          save() {
+            curl -fsSL "$2" -o "$1"
+            if ! grep -q '<svg' "$1" || grep -q 'section unavailable' "$1"; then
+              echo "Card $1 inválido" >&2
+              exit 1
+            fi
+            sed -i -E -e 's#<text[^>]*>gitskins\.com</text>##g' -e 's#aria-label="GitSkins #aria-label="#' -e 's#>GITSKINS / #>#g' "$1"
+          }
+          # fetch <nome> <seção> <parâmetros extras>
+          fetch() {
+            for mode in dark light; do
+              save "dist/card-$1-$mode.svg" "$BASE/$2?$COMMON&$3&mode=$mode"
+            done
+          }
+          fetch hero hero "variant=living-identity&label=joaoanisio&v=wow-living-identity-1"
+          fetch projects projects "repos=joaoanisio%2Ffast-api-cars%2Cjoaoanisio%2Fn8n-whatsapp-ai-agent%2Cjoaoanisio%2Fjob-application-tracker%2Cjoaoanisio%2Fcrypto-portfolio-analytics&variant=wow&v=wow-projects-1"
+          fetch stack stack ""
+          fetch snake heatmap "style=snake"
+
+      - name: Traduzir cards para português
+        run: |
+          cat > traducao.sed <<'EOF'
+          s#>HELLO, WORLD\. I'M<#>OLÁ, MUNDO. EU SOU O<#g
+          s#>LIVING IDENTITY<#>IDENTIDADE VIVA<#g
+          s#>On the public internet<#>Construindo em público<#g
+          s#REPOSITORIES#REPOSITÓRIOS#g
+          s#CONTRIBUTIONS#CONTRIBUIÇÕES#g
+          s#FOLLOWERS#SEGUIDORES#g
+          s#STARS#ESTRELAS#g
+          s#Animated colored ASCII portrait and name\.#Retrato em ASCII colorido e animado, com nome.#g
+          s# — Living Identity<# — Identidade Viva<#g
+          s#>PROJECT CONSTELLATION<#>CONSTELAÇÃO DE PROJETOS<#g
+          s#>A universe of work<#>Um universo de trabalho<#g
+          s#>Open source · #>Código aberto · #g
+          s# · 1 stars?<# · 1 estrela<#g
+          s# · ([0-9]+) stars?<# · \1 estrelas<#g
+          s#>Language Stack<#>Linguagens<#g
+          s#>Repository-weighted technologies<#>Tecnologias por peso nos repositórios<#g
+          s#>SNAKE TRAIL<#>RASTRO DA COBRINHA<#g
+          s#>([0-9]+) contributions, one continuous run<#>\1 contribuições, uma corrida sem parar<#g
+          s#>LIVE<#>AO VIVO<#g
+          EOF
+          sed -i -E -f traducao.sed dist/*.svg
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v4

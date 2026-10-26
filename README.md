@@ -1,22 +1,23 @@
 <!-- ============================================================
      README Profile · JoaoAnisio
-     Visuais animados: GitSkins (tema aurora, claro/escuro automático)
+     Visuais animados (tema github-dark, claro/escuro automático)
+     Os cards animados são gerados pelo workflow .github/workflows/snake.yml (branch "output")
      ============================================================ -->
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=living-identity&label=joaoanisio&v=wow-living-identity-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/hero?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=living-identity&label=joaoanisio&v=wow-living-identity-1&mode=dark" width="100%" alt="Retrato animado e nome em ASCII de João Anísio" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-hero-light.svg" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-hero-dark.svg" width="100%" alt="Retrato animado e nome em ASCII de João Anísio" />
 </picture>
 
 <a href="https://github.com/JoaoAnisio">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=7C5CFF&center=true&vCenter=true&width=620&lines=Ol%C3%A1%2C+eu+sou+o+Jo%C3%A3o+%F0%9F%91%8B;Desenvolvedor+Full-Stack;Estudante+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o;APIs+REST+com+Python+%26+Java;Automa%C3%A7%C3%B5es+com+IA+e+n8n;Construindo+em+p%C3%BAblico+%F0%9F%9A%80" alt="Texto digitando: Olá, eu sou o João · Desenvolvedor Full-Stack · APIs REST com Python & Java · Automações com IA e n8n" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=388BFD&center=true&vCenter=true&width=620&lines=Ol%C3%A1%2C+eu+sou+o+Jo%C3%A3o+%F0%9F%91%8B;Desenvolvedor+Full-Stack;Estudante+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o;APIs+REST+com+Python+%26+Java;Automa%C3%A7%C3%B5es+com+IA+e+n8n;Construindo+em+p%C3%BAblico+%F0%9F%9A%80" alt="Texto digitando: Olá, eu sou o João · Desenvolvedor Full-Stack · APIs REST com Python & Java · Automações com IA e n8n" />
 </a>
 
 <p>
-  <a href="https://github.com/JoaoAnisio?tab=repositories"><img src="https://img.shields.io/badge/repos-10-7C5CFF?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios" /></a>
-  <img src="https://komarev.com/ghpvc/?username=JoaoAnisio&style=for-the-badge&color=00C2A8&label=VISITAS" alt="Contador de visitas" />
+  <a href="https://github.com/JoaoAnisio?tab=repositories"><img src="https://img.shields.io/badge/repos-10-388BFD?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios" /></a>
+  <img src="https://komarev.com/ghpvc/?username=JoaoAnisio&style=for-the-badge&color=388BFD&label=VISITAS" alt="Contador de visitas" />
   <img src="https://img.shields.io/badge/status-aberto%20a%20oportunidades-22C55E?style=for-the-badge" alt="Aberto a oportunidades" />
 </p>
 
@@ -72,11 +73,13 @@ joao:
 
 ## 🛠️ Stack & ferramentas
 
+<p><code>joaoanisio@github:~$ toolbox --list</code></p>
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-stack-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stack?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-stack-1&mode=dark" width="100%" alt="Stack de tecnologias animada" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-stack-light.svg" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-stack-dark.svg" width="100%" alt="Stack de tecnologias de joaoanisio" />
 </picture>
 
 <br /><br />
@@ -96,8 +99,8 @@ joao:
 ## 🚀 Projetos em destaque
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&repos=joaoanisio%2Ffast-api-cars%2Cjoaoanisio%2Fn8n-whatsapp-ai-agent%2Cjoaoanisio%2Fjob-application-tracker%2Cjoaoanisio%2Fcrypto-portfolio-analytics&variant=wow&v=wow-projects-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/projects?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&repos=joaoanisio%2Ffast-api-cars%2Cjoaoanisio%2Fn8n-whatsapp-ai-agent%2Cjoaoanisio%2Fjob-application-tracker%2Cjoaoanisio%2Fcrypto-portfolio-analytics&variant=wow&v=wow-projects-1&mode=dark" width="100%" alt="Constelação animada de projetos" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-projects-light.svg" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-projects-dark.svg" width="100%" alt="Constelação animada de projetos" />
 </picture>
 
 <table width="100%">
@@ -161,21 +164,10 @@ Painel para organizar candidaturas a vagas — status, empresas e próximos pass
 
 ## 📊 Estatísticas
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-stats-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stats?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-stats-1&mode=dark" width="100%" alt="Estatísticas animadas do GitHub" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-heatmap-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/heatmap?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-heatmap-1&mode=dark" width="100%" alt="Mapa de energia das contribuições" />
-</picture>
-
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml (branch "output") -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/github-snake-dark.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-snake-light.svg" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-snake-dark.svg" width="100%" alt="Contribuições de joaoanisio sendo comidas por uma cobrinha" />
 </picture>
 
 <p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
@@ -211,11 +203,6 @@ Tenho uma empresa focada em **landing pages e sites para negócios** — transfo
 
 Curto trabalhar com gente que se importa com qualidade, contexto e entregar a versão útil.
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-social-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/social?username=joaoanisio&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4&variant=wow&v=wow-social-1&mode=dark" width="100%" alt="Links de contato" />
-</picture>
-
 <p>
   <a href="https://www.linkedin.com/in/jo%C3%A3o-gnd/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:joaoanisiognd.ja@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
@@ -223,6 +210,6 @@ Curto trabalhar com gente que se importa com qualidade, contexto e entregar a ve
   <a href="https://github.com/JoaoAnisio"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
-<sub>Visuais animados por <a href="https://www.gitskins.com/readme-generator">GitSkins</a> · feito com ☕ por João Anísio</sub>
+<sub>Feito com ☕ por João Anísio</sub>
 
 </div>
