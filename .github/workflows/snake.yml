@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Baixar cards animados sem marca d'água
+      - name: Baixar cards sem marca d'água
         env:
           BASE: https://www.gitskins.com/api/section
           COMMON: username=joaoanisio&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F164044153%3Fu%3Da8ae0ab8f0bc480d1e74a3e0f704bd44a937da79%26v%3D4
@@ -28,7 +28,11 @@ jobs:
               echo "Card $1 inválido" >&2
               exit 1
             fi
-            sed -i -E -e 's#<text[^>]*>gitskins\.com</text>##g' -e 's#aria-label="GitSkins #aria-label="#' -e 's#>GITSKINS / #>#g' "$1"
+            if grep -q 'Unlock this template' "$1"; then
+              echo "Card $1 usa um modelo pago do GitSkins" >&2
+              exit 1
+            fi
+            sed -i -E -e 's#<text[^>]*>gitskins\.com</text>##g' -e 's#aria-label="GitSkins #aria-label="#' "$1"
           }
           # fetch <nome> <seção> <parâmetros extras>
           fetch() {
@@ -36,33 +40,34 @@ jobs:
               save "dist/card-$1-$mode.svg" "$BASE/$2?$COMMON&$3&mode=$mode"
             done
           }
-          fetch hero hero "variant=living-identity&label=joaoanisio&v=wow-living-identity-1"
-          fetch projects projects "repos=joaoanisio%2Ffast-api-cars%2Cjoaoanisio%2Fn8n-whatsapp-ai-agent%2Cjoaoanisio%2Fjob-application-tracker%2Cjoaoanisio%2Fcrypto-portfolio-analytics&variant=wow&v=wow-projects-1"
+          fetch hero hero "label=joaoanisio"
+          fetch projects projects "repos=joaoanisio%2Ffast-api-cars%2Cjoaoanisio%2Fn8n-whatsapp-ai-agent%2Cjoaoanisio%2Fjob-application-tracker%2Cjoaoanisio%2Fcrypto-portfolio-analytics"
           fetch stack stack ""
-          fetch snake heatmap "style=snake"
+          fetch heatmap heatmap ""
 
       - name: Traduzir cards para português
         run: |
           cat > traducao.sed <<'EOF'
-          s#>HELLO, WORLD\. I'M<#>OLÁ, MUNDO. EU SOU O<#g
-          s#>LIVING IDENTITY<#>IDENTIDADE VIVA<#g
-          s#>On the public internet<#>Construindo em público<#g
-          s#REPOSITORIES#REPOSITÓRIOS#g
-          s#CONTRIBUTIONS#CONTRIBUIÇÕES#g
-          s#FOLLOWERS#SEGUIDORES#g
-          s#STARS#ESTRELAS#g
-          s#Animated colored ASCII portrait and name\.#Retrato em ASCII colorido e animado, com nome.#g
-          s# — Living Identity<# — Identidade Viva<#g
-          s#>PROJECT CONSTELLATION<#>CONSTELAÇÃO DE PROJETOS<#g
-          s#>A universe of work<#>Um universo de trabalho<#g
-          s#>Open source · #>Código aberto · #g
-          s# · 1 stars?<# · 1 estrela<#g
-          s# · ([0-9]+) stars?<# · \1 estrelas<#g
+          s#>Building with ([^<]+) on GitHub\.<#>Construindo com \1 no GitHub.<#g
+          s#>TOTAL STARS<#>ESTRELAS NO TOTAL<#g
+          s#>1 projects?<#>1 projeto<#g
+          s#>([0-9]+) projects<#>\1 projetos<#g
+          s#>No description provided\.<#>Sem descrição.<#g
+          s#>updated today<#>atualizado hoje<#g
+          s#>updated 1d ago<#>atualizado há 1 dia<#g
+          s#>updated ([0-9]+)d ago<#>atualizado há \1 dias<#g
+          s#>updated 1w ago<#>atualizado há 1 semana<#g
+          s#>updated ([0-9]+)w ago<#>atualizado há \1 semanas<#g
+          s#>updated 1mo ago<#>atualizado há 1 mês<#g
+          s#>updated ([0-9]+)mo ago<#>atualizado há \1 meses<#g
+          s#>updated 1y ago<#>atualizado há 1 ano<#g
+          s#>updated ([0-9]+)y ago<#>atualizado há \1 anos<#g
           s#>Language Stack<#>Linguagens<#g
           s#>Repository-weighted technologies<#>Tecnologias por peso nos repositórios<#g
-          s#>SNAKE TRAIL<#>RASTRO DA COBRINHA<#g
-          s#>([0-9]+) contributions, one continuous run<#>\1 contribuições, uma corrida sem parar<#g
-          s#>LIVE<#>AO VIVO<#g
+          s#>Contribution Activity<#>Atividade de contribuições<#g
+          s#>([0-9]+) contributions in the last year<#>\1 contribuições no último ano<#g
+          s#>Less<#>Menos<#g
+          s#>More<#>Mais<#g
           EOF
           sed -i -E -f traducao.sed dist/*.svg
 

@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-hero-light.svg" />
-  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-hero-dark.svg" width="100%" alt="Retrato animado e nome em ASCII de João Anísio" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-hero-dark.svg" width="100%" alt="Foto, nome e destaques do perfil de João Anísio" />
 </picture>
 
 <a href="https://github.com/JoaoAnisio">
@@ -98,7 +98,7 @@ joao:
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-projects-light.svg" />
-  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-projects-dark.svg" width="100%" alt="Constelação animada de projetos" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-projects-dark.svg" width="100%" alt="Lista dos projetos em destaque" />
 </picture>
 
 <table width="100%">
@@ -162,10 +162,10 @@ Painel para organizar candidaturas a vagas — status, empresas e próximos pass
 
 ## 📊 Estatísticas
 
-<!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml (branch "output") -->
+<!-- O gráfico é gerado pelo workflow .github/workflows/snake.yml (branch "output") -->
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-snake-light.svg" />
-  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-snake-dark.svg" width="100%" alt="Contribuições de joaoanisio sendo comidas por uma cobrinha" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-heatmap-light.svg" />
+  <img src="https://raw.githubusercontent.com/JoaoAnisio/JoaoAnisio/output/card-heatmap-dark.svg" width="100%" alt="Gráfico de contribuições de joaoanisio no último ano" />
 </picture>
 
 <p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
